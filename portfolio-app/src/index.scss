@@ -1,6 +1,63 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: lighten(red, 20%),
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Adrian__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  min-width: 20rem;
+}
+
+.Adrian__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;  
+}
+
+.Adrian__img {
+  width: 100%;
+  height: 100%;
+}
+
+.Adrian__name {
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.Adrian__role {
+  padding-top: .75rem;
+  font-size: 1.125rem;
+}
+
+.Adrian__links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.25rem;
+
+  @media (min-width: 43.75rem) {
+    flex-direction: row;
+  }
+}
+
+.Adrian__links-container-div {
+  margin-bottom: 1rem;
+
+  @media (min-width: 43.75rem) {
+    margin-bottom: 0;
+  }
+}
+
+.Adrian__link {
+  color: #3498db;
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 1.0625rem;
 }
